@@ -1,0 +1,583 @@
+<html>
+	<head>
+		 <!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- css-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		
+		<!--
+		<link rel="stylesheet" href="https://antigo.mctic.gov.br/mctic/opencms/system/modules/br.com.squadra.principal/resources/css/global.css"/>
+		#1e293b
+		#0e2439
+		-->
+		
+		<script
+		  src="https://code.jquery.com/jquery-3.7.1.min.js"
+		  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+		  crossorigin="anonymous"></script>
+  
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+		<style>
+			.inovatec-bgcolor{
+				background-color: #0e2439;
+				color: #FFFFFF;				
+			}
+			
+			.card-inovatec{
+				max-width: 18em; 
+				max-height:15em;
+			}
+			
+			.contentText{
+				font-size: 36px;
+			}
+			
+			.card-text a{
+				color:#FF8C00;
+			}
+			
+			.card-subtitle{
+				height:50px;
+			}
+			
+			.responsive-iframe {
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				width: 80%;
+				height: 371px;
+			}
+		
+		</style>
+	</head>
+	
+	<body>
+		<br/>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="card">
+						<div class="card-header inovatec-bgcolor">
+							<h2 class="full-width"><span>Painel de Indicadores de CT&amp;I - UEPB</span></h2>
+						</div>
+			
+						<div class="card-body">						
+							<div class="row">
+								<div class="col-md-4">
+									<div class="card card-inovatec">
+										<div class="card-header inovatec-bgcolor">
+											<!--<h5 class="card-title text-center">Indicador 1</h5>-->
+											<h6 class="card-subtitle mb-2 text-center">
+												Acordos, parcerias e contratos de transferência de tecnologia
+											</h6>
+										</div>
+										<div class="card-body">											
+											<p class="card-text text-center">
+												<a href="#" data-bs-toggle="modal" data-bs-target="#modalIndicador1" class="full-width text-center fade-effect" style="position: relative;">
+														<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-clipboard2-check" viewBox="0 0 16 16">
+  <path d="M9.5 0a.5.5 0 0 1 .5.5.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 2v-.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 .5-.5.5.5 0 0 1 .5-.5z"/>
+  <path d="M3 2.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 0 0-1h-.5A1.5 1.5 0 0 0 2 2.5v12A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 12.5 1H12a.5.5 0 0 0 0 1h.5a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5z"/>
+  <path d="M10.854 7.854a.5.5 0 0 0-.708-.708L7.5 9.793 6.354 8.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
+</svg>
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="card card-inovatec">
+										<div class="card-header inovatec-bgcolor">
+											<!--<h5 class="card-title text-center">Indicador 2</h5>-->
+											<h6 class="card-subtitle mb-2 text-center">
+												Habitats de inovação
+											</h6>
+										</div>
+										<div class="card-body">											
+											<p class="card-text text-center">
+												<a href="#" data-bs-toggle="modal" data-bs-target="#modalIndicador2" class="full-width text-center fade-effect" style="position: relative;">
+														<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-building-gear" viewBox="0 0 16 16">
+  <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6.5a.5.5 0 0 1-1 0V1H3v14h3v-2.5a.5.5 0 0 1 .5-.5H8v4H3a1 1 0 0 1-1-1z"/>
+  <path d="M4.5 2a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-6 3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-6 3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm4.386 1.46c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
+</svg>
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="card card-inovatec">
+										<div class="card-header inovatec-bgcolor">
+											<!--<h5 class="card-title text-center">Indicador 3</h5>-->
+											<h6 class="card-subtitle mb-2 text-center">
+												Ativos licenciados ou transferidos
+											</h6>
+										</div>
+										<div class="card-body">											
+											<p class="card-text text-center">
+												<a href="#" data-bs-toggle="modal" data-bs-target="#modalIndicador3" class="full-width text-center fade-effect" style="position: relative;">
+														<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+  <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73z"/>
+</svg>
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<br/>
+							<div class="row">
+								<div class="col-md-4">
+									<div class="card card-inovatec">
+										<div class="card-header inovatec-bgcolor">
+											<!--<h5 class="card-title text-center">Indicador 4</h5>-->
+											<h6 class="card-subtitle mb-2 text-center">
+												Alunos envolvidos em atividades de inovação
+											</h6>
+										</div>
+										<div class="card-body">											
+											<p class="card-text text-center">
+												<a href="#" data-bs-toggle="modal" data-bs-target="#modalIndicador4" class="full-width text-center fade-effect" style="position: relative;">
+														<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+  <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+</svg>
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>							
+								<div class="col-md-4">
+									<div class="card card-inovatec">
+										<div class="card-header inovatec-bgcolor">
+											<!--<h5 class="card-title text-center">Indicador 5</h5>-->
+											<h6 class="card-subtitle mb-2 text-center">
+												Servidores desenvolvendo atividades de inovação
+											</h6>
+										</div>
+										<div class="card-body">											
+											<p class="card-text text-center">
+												<a href="#" data-bs-toggle="modal" data-bs-target="#modalIndicador5" class="full-width text-center fade-effect" style="position: relative;">
+														<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-person-badge" viewBox="0 0 16 16">
+  <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+  <path d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492z"/>
+</svg>
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="card card-inovatec">
+										<div class="card-header inovatec-bgcolor">
+											<!--<h5 class="card-title text-center">Indicador 6</h5>-->
+											<h6 class="card-subtitle mb-2 text-center">
+												Ambientes de inovação de uso compartilhado 
+											</h6>
+										</div>
+										<div class="card-body">											
+											<p class="card-text text-center">
+												<a href="#" data-bs-toggle="modal" data-bs-target="#modalIndicador6" class="full-width text-center fade-effect" style="position: relative;">
+														<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-buildings" viewBox="0 0 16 16">
+  <path d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022M6 8.694 1 10.36V15h5zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5z"/>
+  <path d="M2 11h1v1H2zm2 0h1v1H4zm-2 2h1v1H2zm2 0h1v1H4zm4-4h1v1H8zm2 0h1v1h-1zm-2 2h1v1H8zm2 0h1v1h-1zm2-2h1v1h-1zm0 2h1v1h-1zM8 7h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zM8 5h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zm0-2h1v1h-1z"/>
+</svg>
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<br/>
+							<div class="row">
+								<div class="col-md-4">
+									<div class="card card-inovatec">
+										<div class="card-header inovatec-bgcolor">
+											<!--<h5 class="card-title text-center">Indicador 7</h5>-->
+											<h6 class="card-subtitle mb-2 text-center">
+												Ativos de propriedade intelectual
+											</h6>
+										</div>
+										<div class="card-body">											
+											<p class="card-text text-center">
+												<a href="#" data-bs-toggle="modal" data-bs-target="#modalIndicador7" class="full-width text-center fade-effect" style="position: relative;">
+														<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
+  <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
+</svg>
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="card card-inovatec">
+										<div class="card-header inovatec-bgcolor">
+											<!--<h5 class="card-title text-center">Indicador 8</h5>-->
+											<h6 class="card-subtitle mb-2 text-center">
+												Projetos de inovação desenvolvidos 
+											</h6>
+										</div>
+										<div class="card-body">											
+											<p class="card-text text-center">
+												<a href="#" data-bs-toggle="modal" data-bs-target="#modalIndicador8" class="full-width text-center fade-effect" style="position: relative;">
+														<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+  <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+  <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+</svg>
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="card card-inovatec">
+										<div class="card-header inovatec-bgcolor">
+											<!--<h5 class="card-title text-center">Indicador 9</h5>-->
+											<h6 class="card-subtitle mb-2 text-center">
+												Prestação de serviços técnicos especializados 
+											</h6>
+										</div>
+										<div class="card-body">											
+											<p class="card-text text-center">
+												<a href="#" data-bs-toggle="modal" data-bs-target="#modalIndicador9" class="full-width text-center fade-effect" style="position: relative;">
+														<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-wrench-adjustable" viewBox="0 0 16 16">
+  <path d="M16 4.5a4.5 4.5 0 0 1-1.703 3.526L13 5l2.959-1.11q.04.3.041.61"/>
+  <path d="M11.5 9c.653 0 1.273-.139 1.833-.39L12 5.5 11 3l3.826-1.53A4.5 4.5 0 0 0 7.29 6.092l-6.116 5.096a2.583 2.583 0 1 0 3.638 3.638L9.908 8.71A4.5 4.5 0 0 0 11.5 9m-1.292-4.361-.596.893.809-.27a.25.25 0 0 1 .287.377l-.596.893.809-.27.158.475-1.5.5a.25.25 0 0 1-.287-.376l.596-.893-.809.27a.25.25 0 0 1-.287-.377l.596-.893-.809.27-.158-.475 1.5-.5a.25.25 0 0 1 .287.376M3 14a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+</svg>
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+		
+		<!-- Modal Indicador 1-->
+		<div class="modal fade" id="modalIndicador1" tabindex="-1" aria-labelledby="modelIndicador1Label" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">						
+						<div class="col-md-11 float-start bg-color">
+							<h5 class="modal-title text-center">
+								INDICADOR 1
+							</h5>								
+							<h6 class="modal-title text-center">
+								Quantidade de acordos, parcerias e contratos de transferência de tecnologia e/ou know how firmados com o setor produtivo 
+							</h6>
+						</div>
+						<div class="col-md-1 float-end">
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+					</div>					
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-12 text-center">
+								<iframe class="responsive-iframe"  src= "https://docs.google.com/spreadsheets/d/e/2PACX-1vTHsF5wbQT93M4pZ6FLQ-zSeAAMOUuvA2rH6l92Mqd9-7N-Ta-T3zNKYj0egR085AQhICNdUnkvkTv7/pubchart?oid=992719312&format=interactive"></iframe>
+							</div>
+							<div class="col-md-12">
+								Este indicador tem como objetivo quantificar o total de acordos, parcerias e contratos que geraram transferência de tecnologia e/ou know how junto ao setor produtivo.
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Modal Indicador 2-->
+		<div class="modal fade" id="modalIndicador2" tabindex="-1" aria-labelledby="modelIndicador2Label" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">						
+						<div class="col-md-11 float-start bg-color">
+							<h5 class="modal-title text-center">
+								INDICADOR 2
+							</h5>								
+							<h6 class="modal-title text-center">
+								Número de habitats de inovação 
+							</h6>
+						</div>
+						<div class="col-md-1 float-end">
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-12 text-center">
+								<iframe class="responsive-iframe"  src= "https://docs.google.com/spreadsheets/d/e/2PACX-1vTHsF5wbQT93M4pZ6FLQ-zSeAAMOUuvA2rH6l92Mqd9-7N-Ta-T3zNKYj0egR085AQhICNdUnkvkTv7/pubchart?oid=512173219&format=interactive"></iframe>
+							</div>
+							<div class="col-md-12">
+								Este indicador tem como objetivo mensurar a totalidade dos habitats de inovação (incubadoras, aceleradoras, espaços makers, startups, spin-off, espaço coworking) da UEPB.
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Modal Indicador 3-->
+		<div class="modal fade" id="modalIndicador3" tabindex="-1" aria-labelledby="modelIndicador3Label" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					
+					<div class="modal-header">						
+						<div class="col-md-11 float-start bg-color">
+							<h5 class="modal-title text-center">
+								INDICADOR 3
+							</h5>								
+							<h6 class="modal-title text-center">
+								Quantidade de ativos de propriedade intelectual licenciados ou transferidos
+							</h6>
+						</div>
+						<div class="col-md-1 float-end">
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+					</div>	
+					
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-12 text-center">
+								<iframe class="responsive-iframe"  src= "https://docs.google.com/spreadsheets/d/e/2PACX-1vTHsF5wbQT93M4pZ6FLQ-zSeAAMOUuvA2rH6l92Mqd9-7N-Ta-T3zNKYj0egR085AQhICNdUnkvkTv7/pubchart?oid=113348411&format=interactive"></iframe>
+							</div>
+							<div class="col-md-12">
+								Este indicador tem como objetivo mensurar a quantidade de ativos de propriedade Intelectual licenciados ou transferidos, até o fim do exercício correspondente.
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Modal Indicador 4-->
+		<div class="modal fade" id="modalIndicador4" tabindex="-1" aria-labelledby="modelIndicador4Label" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					
+					<div class="modal-header">						
+						<div class="col-md-11 float-start bg-color">
+							<h5 class="modal-title text-center">
+								INDICADOR 4
+							</h5>								
+							<h6 class="modal-title text-center">
+								Porcentagem de alunos da UEPB envolvidos em atividades voltadas à inovação
+							</h6>
+						</div>
+						<div class="col-md-1 float-end">
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+					</div>	
+					
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-12 text-center">
+								<iframe class="responsive-iframe"  src= "https://docs.google.com/spreadsheets/d/e/2PACX-1vTHsF5wbQT93M4pZ6FLQ-zSeAAMOUuvA2rH6l92Mqd9-7N-Ta-T3zNKYj0egR085AQhICNdUnkvkTv7/pubchart?oid=667712761&format=interactive"></iframe>
+							</div>
+							<div class="col-md-12">
+								Este indicador tem como objetivo mensurar a porcentagem de alunos e alunas de graduação, das pós-graduações lato sensu e stricto sensu, envolvidos em atividades voltadas à inovação.
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Modal Indicador 5-->
+		<div class="modal fade" id="modalIndicador5" tabindex="-1" aria-labelledby="modelIndicador5Label" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+										
+					<div class="modal-header">						
+						<div class="col-md-11 float-start bg-color">
+							<h5 class="modal-title text-center">
+								INDICADOR 5
+							</h5>								
+							<h6 class="modal-title text-center">
+								Porcentagem de servidores desenvolvendo atividades voltadas à inovação
+							</h6>
+						</div>
+						<div class="col-md-1 float-end">
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+					</div>	
+					
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-12 text-center">
+								<iframe class="responsive-iframe"  src= "https://docs.google.com/spreadsheets/d/e/2PACX-1vTHsF5wbQT93M4pZ6FLQ-zSeAAMOUuvA2rH6l92Mqd9-7N-Ta-T3zNKYj0egR085AQhICNdUnkvkTv7/pubchart?oid=434953027&format=interactive"></iframe>
+							</div>
+							<div class="col-md-12">
+								Este indicador tem como objetivo mensurar a porcentagem de servidores e servidoras envolvidos em atividades de inovação, seja como professor, coordenador, orientador, coorientador ou membro da equipe. A participação do servidor deverá ser contabilizada uma única vez, independente do quantitativo de atividades que ele participe.
+
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Modal Indicador 6-->
+		<div class="modal fade" id="modalIndicador6" tabindex="-1" aria-labelledby="modelIndicador6Label" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+
+					<div class="modal-header">						
+						<div class="col-md-11 float-start bg-color">
+							<h5 class="modal-title text-center">
+								INDICADOR 6
+							</h5>								
+							<h6 class="modal-title text-center">
+								Quantidade de ambientes de inovação de uso compartilhado dentro da universidade
+							</h6>
+						</div>
+						<div class="col-md-1 float-end">
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+					</div>	
+					
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-12 text-center">
+								<iframe class="responsive-iframe"  src= "https://docs.google.com/spreadsheets/d/e/2PACX-1vTHsF5wbQT93M4pZ6FLQ-zSeAAMOUuvA2rH6l92Mqd9-7N-Ta-T3zNKYj0egR085AQhICNdUnkvkTv7/pubchart?oid=1458685025&format=interactive"></iframe>
+							</div>
+							<div class="col-md-12">
+								Este indicador tem como objetivo quantificar o total de ambientes compartilhados que sejam voltados à inovação (exemplo: laboratórios, núcleos, incubadoras, aceleradoras, espaços makers, startups, spin-off, espaço coworking).
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Modal Indicador 7-->
+		<div class="modal fade" id="modalIndicador7" tabindex="-1" aria-labelledby="modelIndicador7Label" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					
+					<div class="modal-header">						
+						<div class="col-md-11 float-start bg-color">
+							<h5 class="modal-title text-center">
+								INDICADOR 7
+							</h5>								
+							<h6 class="modal-title text-center">
+								Quantidade de ativos de propriedade intelectual
+							</h6>
+						</div>
+						<div class="col-md-1 float-end">
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+					</div>
+					
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-12 text-center">
+								<iframe class="responsive-iframe"  src= "https://docs.google.com/spreadsheets/d/e/2PACX-1vTHsF5wbQT93M4pZ6FLQ-zSeAAMOUuvA2rH6l92Mqd9-7N-Ta-T3zNKYj0egR085AQhICNdUnkvkTv7/pubchart?oid=1038188603&format=interactive"></iframe>
+							</div>
+							<div class="col-md-12">
+								Este indicador tem como objetivo quantificar o total de produtos e processos tecnológicos que geraram depósitos de patentes de inovação ou modelo de utilidade e registros de marca; desenho industrial; cultivar; topografia de circuitos; programa de computador; organismos geneticamente modificados.
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Modal Indicador 8-->
+		<div class="modal fade" id="modalIndicador8" tabindex="-1" aria-labelledby="modelIndicador8Label" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					
+					<div class="modal-header">						
+						<div class="col-md-11 float-start bg-color">
+							<h5 class="modal-title text-center">
+								INDICADOR 8
+							</h5>								
+							<h6 class="modal-title text-center">
+								Quantidade de projetos de inovação desenvolvidos na UEPB
+							</h6>
+						</div>
+						<div class="col-md-1 float-end">
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+					</div>
+					
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-12 text-center">
+								<iframe class="responsive-iframe" src= "https://docs.google.com/spreadsheets/d/e/2PACX-1vTHsF5wbQT93M4pZ6FLQ-zSeAAMOUuvA2rH6l92Mqd9-7N-Ta-T3zNKYj0egR085AQhICNdUnkvkTv7/pubchart?oid=1001482911&format=interactive"></iframe>
+							</div>
+							<div class="col-md-12">
+								Este indicador tem como objetivo quantificar o total de projetos de inovação desenvolvidos ou em desenvolvimento na Universidade (por exemplo: Projetos PIBITI ou pesquisa aplicada em parceria com empresas, EMBRAPII, etc)..
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Modal Indicador 9-->
+		<div class="modal fade" id="modalIndicador9" tabindex="-1" aria-labelledby="modelIndicador9Label" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					
+					<div class="modal-header">						
+						<div class="col-md-11 float-start bg-color">
+							<h5 class="modal-title text-center">
+								INDICADOR 9
+							</h5>								
+							<h6 class="modal-title text-center">
+								Quantidade de prestação de serviços técnicos especializados em inovação e pesquisa científica e tecnológica
+							</h6>
+						</div>
+						<div class="col-md-1 float-end">
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+					</div>
+					
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-12 text-center">
+								<iframe class="responsive-iframe" src= "https://docs.google.com/spreadsheets/d/e/2PACX-1vTHsF5wbQT93M4pZ6FLQ-zSeAAMOUuvA2rH6l92Mqd9-7N-Ta-T3zNKYj0egR085AQhICNdUnkvkTv7/pubchart?oid=1614471624&format=interactive"></iframe>
+							</div>
+							<div class="col-md-12">
+								Este indicador tem como objetivo quantificar o total de serviços técnicos voltados à CT&I que foram realizados pela Universidade.
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	</body>
+</html>
